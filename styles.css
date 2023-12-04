@@ -1,0 +1,93 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9; 
+}
+/* Style for the page header */
+header {
+  background-color: #003366; 
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+/* Style for navigation links */
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  border-bottom: 3px solid #ffdd00; 
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Style for the form that contains conversion input fields */
+.conversion-form {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+/* Style for form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* Style for text inputs, select dropdowns, and buttons */
+input[type=text],
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+/* Style for buttons */
+button {
+  background-color: #005288; 
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* Hover effect for buttons */
+button:hover {
+  background-color: #003366; 
+}
+/* Style for the result display and common increments container */
+.result,
+.common-increments {
+  display: none; 
+  margin-top: 10px;
+  font-size: 16px;
+}
+/* Style for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+/* Style for table headers and cells */
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd; 
+}
+
+th {
+  background-color: #f8f8f8; 
+}

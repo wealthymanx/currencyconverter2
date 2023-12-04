@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <header>
+      <nav>
+          <a href="#">Send Money</a>
+          <a href="#" class="active">Converter</a>
+          <a href="#">Currency API</a>
+          <a href="#">Tools</a>
+          <a href="#">Sign In</a>
+          <a href="#">Register</a>
+      </nav>
+  </header>
+    
+    <div class="conversion-form">
+      <label for="fromCurrency">From Currency:</label>
+      <select id="fromCurrency">
+        <option value="USD">USD-United States Dollar</option>
+        <option value="AUD">AUD-Australian Dollar</option>
+        <option value="CAD">CAD-Canadian Dollar</option>
+        <option value="CLP">CLP-Chilean Peso</option>
+        <option value="CNY">CNY-Chinese Yuan</option>
+        <option value="EUR">EUR-Euro</option>
+        <option value="GBP">GBP-British Pound Sterling</option>
+        <option value="INR">INR-Indian Rupee</option>
+        <option value="JPY">JPY-Japanese Yen</option>
+        <option value="RUB">RUB-Russian Ruble</option>
+        <option value="ZAR">ZAR-South African Rand</option>
+        
+      </select>
+      <button type="button" id="switchButton">Switch</button>
+     
+      <label for="toCurrency">To Currency:</label>
+      <select id="toCurrency">
+        <option value="AUD">AUD-Australian Dollar</option>
+        <option value="CAD">CAD-Canadian Dollar</option>
+        <option value="CLP">CLP-Chilean Peso</option>
+        <option value="CNY">CNY-Chinese Yuan</option>
+        <option value="EUR">EUR-Euro</option>
+        <option value="GBP">GBP-British Pound Sterling</option>
+        <option value="INR">INR-Indian Rupee</option>
+        <option value="JPY">JPY-Japanese Yen</option>
+        <option value="RUB">RUB-Russian Ruble</option>
+        <option value="USD">USD-United States Dollar</option>
+        <option value="ZAR">ZAR-South African Rand</option>
+      </select>
+      
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" placeholder="Enter amount" autocomplete="off">
+      
+      <button type="submit" id="convertButton">Convert</button>
+    </div>
+    
+    <div class="result" id="result">
+    </div>
+    <div class="lookup-form">
+        <label for="userInput">Lookup Currency:</label>
+        <input type="text" id="userInput" placeholder="Enter a currency">
+        
+        <div id="suggestions"></div>
+        <div id="lookupResult"></div>
+      </div>
+  </div>
+  <div id="commonIncrements" class="common-increments"></div>
+  
+  <script src="er.js"></script>
+  </body>
+  </html>
